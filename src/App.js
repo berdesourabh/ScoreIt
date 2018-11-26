@@ -1,12 +1,18 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './reducers';
+import Home from './components/Home/Home';
 
-const App = () => {
+class App extends Component {
+  render() {
+  const store = createStore(reducers);
   return (
-  <View>
-    <Text>ScoreIt</Text>
-  </View>
-);
-};
+    <Provider Store={store}>
+      <Home />
+    </Provider>
+    );
+  }
+}
 
 export default App;

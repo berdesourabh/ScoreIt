@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const Title = () => {
+const Panel = () => {
     return (
       <View>
         <Text>
-          Scoreit
+        Home Screen
         </Text>
       </View>
     );
-};
-
-export default Title;
+  };
+  
+export default Panel;

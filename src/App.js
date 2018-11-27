@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
-import Home from './components/Home/Home';
+import Home from './components/home/Home';
 
 class App extends Component {
   render() {
